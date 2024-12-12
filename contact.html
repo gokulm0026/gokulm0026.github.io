@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0062ff;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            font-size: 1.2rem;
+            background: #0062ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #004bbd;
+        }
+
+        .map {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: #0062ff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .social-links a:hover {
+            color: #004bbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@spicenest.com</p>
+            <p><strong>Phone:</strong> 9876543210</p>
+            <p><strong>Address:</strong> Spice Nest, 123abcd, India</p>
+            <p><strong>Timings:</strong> Monday to Friday – 9:00 AM to 6:00 PM IST</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.293395483571!2d76.26730431532128!3d10.85051659227679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8582352c55f5f%3A0x6d7280eac9b9af4a!2sKochi%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="social-links">
+            <p>Follow us on:</p>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</body>
+</html>
