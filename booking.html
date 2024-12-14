@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now</title>
     <style>
-        /* General Reset */
+        
         * {
             margin: 0;
             padding: 0;
@@ -14,13 +14,13 @@
         
         body {
             font-family: "Poppins", sans-serif;
-            background-color: #f8f9fa; /* Light gray background */
+            background-color: #f8f9fa; 
             color: #333;
             line-height: 1.6;
         }
         
         header {
-            background-color: #007bff; /* Light blue */
+            background-color: #007bff; 
             color: white;
             text-align: center;
             padding: 1.5rem 0;
@@ -146,12 +146,10 @@
     </div>
 
     <script>
-        // Select the form element
         const bookingForm = document.getElementById('bookingForm');
 
-        // Attach a 'submit' event listener
         bookingForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             
             // Retrieve user input
             const name = document.getElementById('name').value.trim();
@@ -160,13 +158,9 @@
             const checkout = document.getElementById('checkout').value;
             const guests = document.getElementById('guests').value;
 
-            // Ensure required fields are filled
             if (name && email && checkin && checkout && guests) {
-                // Show confirmation popup
                 alert(`Thank you, ${name}! Your booking is confirmed.\n\nDetails:\nEmail: ${email}\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nGuests: ${guests}`);
-                
-                // Optionally reset the form
-                bookingForm.reset();
+                                bookingForm.reset();
             } else {
                 alert('Please fill out all required fields before submitting.');
             }
