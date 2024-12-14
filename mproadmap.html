@@ -5,137 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahabalipuram Roadmap</title>
-    <style>/* General Reset */
+    <style>/* Basic Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
         
+        /* Body & Background */
         body {
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
-            padding: 20px;
         }
         
+        /* Header Styles (if included in any page) */
         header {
-            background-color: #3a3a3a;
+            background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.5em;
         }
         
+        /* Roadmap Section */
         .roadmap {
+            width: 90%;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 40px auto;
+            padding: 20px;
             background-color: white;
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         .roadmap h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #333;
+            text-align: center;
+            font-size: 2em;
+            color: #2a9d8f;
+            margin-bottom: 20px;
         }
         
         .roadmap p {
-            font-size: 1rem;
+            font-size: 1.2em;
+            line-height: 1.6;
             margin-bottom: 20px;
+            color: #555;
         }
         
         .roadmap ul {
             list-style-type: none;
-            margin-bottom: 20px;
+            padding: 0;
         }
         
         .roadmap ul li {
-            background-color: #f1f1f1;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            color: #444;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
         }
         
         .roadmap ul li strong {
-            font-weight: bold;
-            color: #333;
+            color: #2a9d8f;
         }
         
-        #map {
-            margin: 30px 0;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
+        /* Google Maps Embed */
         #map iframe {
             width: 100%;
             height: 400px;
             border: 0;
             border-radius: 8px;
+            margin-top: 20px;
         }
         
+        /* Buttons */
         .btn {
             display: inline-block;
-            text-decoration: none;
-            background-color: #4CAF50;
+            padding: 10px 20px;
+            background-color: #2a9d8f;
             color: white;
-            padding: 15px 25px;
+            text-decoration: none;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 1.1em;
             margin-top: 20px;
             text-align: center;
         }
         
         .btn:hover {
-            background-color: #45a049;
+            background-color: #21867a;
         }
         
+        /* Footer */
         footer {
-            text-align: center;
-            background-color: #3a3a3a;
+            background-color: #333;
             color: white;
-            padding: 15px;
-            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
         
         footer h1 {
-            font-size: 1rem;
+            font-size: 1em;
         }
         
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
+            .roadmap {
+                padding: 15px;
             }
         
             .roadmap h2 {
-                font-size: 1.5rem;
+                font-size: 1.8em;
             }
         
-            .roadmap ul li {
-                font-size: 1rem;
-                padding: 12px;
+            .roadmap p, .roadmap ul li {
+                font-size: 1em;
             }
         
             .btn {
-                padding: 12px 20px;
-                font-size: 1rem;
+                font-size: 1em;
+                padding: 8px 16px;
             }
         
             #map iframe {
                 height: 300px;
             }
+        }
         
-            footer h1 {
-                font-size: 0.9rem;
+        @media (max-width: 480px) {
+            .roadmap h2 {
+                font-size: 1.6em;
+            }
+        
+            .roadmap p, .roadmap ul li {
+                font-size: 0.95em;
+            }
+        
+            .roadmap ul li {
+                margin-bottom: 10px;
+            }
+        
+            .btn {
+                width: 100%;
+                font-size: 1.1em;
+                padding: 12px;
+            }
+        
+            #map iframe {
+                height: 250px;
             }
         }
         </style>
@@ -166,7 +185,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.2083655138986!2d80.2201945!3d12.6204897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526e96b56e8d1f%3A0xe62cf57fefb49759!2sShore%20Temple%2C%20Mahabalipuram!5e0!3m2!1sen!2sin!4v1605551823591!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <a href="booking.html" class="btn">COntinue Booking</a>
+        <a href="booking.html" class="btn">Book Now</a>
     </section>
 
     <footer>
